@@ -1,0 +1,97 @@
+######################
+6. Length Finder
+######################
+Greatest among three input (Error ache)- Aftahi
+###############################
+echo “enter the value of a b c”
+read a
+read b
+read c
+if [$a –gt $b –a $a –gt $c]
+then
+echo “a is greatest”
+else
+if [$b –gt $c]
+then
+echo “b is greatest”
+else
+echo “c is greatest”
+fi
+fi
+############################
+switch case
+##########################
+clear
+echo “enter a and b”
+read a
+read b
+echo “enter operation to be performed”
+read op
+case $op in
++) c= expr $a + $b ;;
+-) c= expr $a - $b ;;
+/) c= expr $a / $b ;;
+\*) c= expr $a \* $b ;;
+*) echo “no valid operation specified” ;;
+esac
+echo Result after performing operation on a and b is echo $c
+########################
+even or odd number
+##############################
+echo "Enter a Number:"
+read n
+ 
+rem=$(( $n % 2 ))
+ 
+if [ $rem -eq 0 ]
+then
+    echo "Number is even"
+else
+    echo "Number is odd"
+fi
+#############################
+
+clear
+echo “enter a number”
+read x
+y= expr $x % 2
+if [test $y –eq 0]
+then
+echo “Number is even”
+else
+echo “Number is odd”
+fi
+#############
+if else on shell scripting
+#############
+a=10
+b=20
+
+if [ $a -eq $b ]
+then
+   echo "a is equal to b"
+elif [ $a -gt $b ]
+then
+   echo "a is greater than b"
+elif [ $a -lt $b ]
+then
+   echo "a is less than b"
+else
+   echo "None of the condition met"
+fi
+##############
+add two number on shell scripting
+##############
+clear 
+echo “Input Value of a b :”
+read a
+read b
+c= expr $a + $b
+echo $c
+##############
+for sorting:
+sort <file name>
+##############
+for wordcount:
+wc <filename>
+############################
